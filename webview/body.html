@@ -1,0 +1,80 @@
+<body>
+<div class="w3-container w3-blue w3-oswald w3-center">
+  <p class="w3-xxlarge">FreePascal + webview</p>
+  <hr>
+  <p>Um exemplo de utilização do Freepascal com webview.</p>
+</div>
+
+<div class="w3-bar w3-black">
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button">Sobre</button>
+  <button onclick="document.getElementById('dataatual').innerHTML = Date()" class="w3-bar-item w3-button">Data/Hora</button>
+  <button onClick="AddContador()" class="w3-bar-item w3-button">Inc Contador</button>
+  <button onClick="ModTabela()" class="w3-bar-item w3-button">Tabela</button>
+  <a href="https://www.freepascal.org/" class="w3-button">Free Pascal</a>
+</div>
+
+
+<div class="w3-container">
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-blue-gray w3-center">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>webview</h2>
+      </header>
+      <div class="w3-container w3-light-gray">
+        <p>A tiny cross-platform webview library for C/C++/Go to build modern cross-platform GUIs.</p>
+        <p>The goal of the project is to create a common HTML5 UI abstraction layer for the most widely used platforms.</p>
+        <p>It supports two-way JavaScript bindings (to call JavaScript from C/C++/Go/Pascal and to call C/C++/Go/Pascal from JavaScript).</p>
+        <p>It uses Cocoa/WebKit on macOS, gtk-webkit2 on Linux and Edge on Windows 10.</p>
+      </div>
+      <footer class="w3-container w3-blue-gray w3-center">
+        <p>2022 por Guaracy</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container">
+  <div class="w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+    <h1>Contador</h1>
+    <p id="contador">0</p>
+  </div>
+</div>
+
+<div class="w3-container">
+   <p id="dataatual"></p>
+</div>
+
+<div class="w3-container">
+  <table id="tabela" class="w3-table-all w3-hoverable">
+    <thead>
+      <tr class="w3-red">
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+    </tr>
+  </table>
+</div>
+
+
+<!--div class="w3-container w3-teal">
+  <p>My footer information</p>
+</div-->
+
